@@ -1,0 +1,42 @@
+.postcard
+  position: relative
+  box-shadow: 2px 4px 4px #ccc
+  &:not(:last-of-type)
+    margin-bottom: 20px
+  .postcard-header-cont
+    position: relative
+    box-shadow: 2px -4px 4px #ccc
+    border-bottom: 1px solid #eaeeea
+    .postcard-header
+      display: flex
+      flex-direction: row
+      padding: 10px 6px
+
+      .postcard-avatar-cont
+        margin-right: 20px
+        flex: 0 0 auto
+        .postcard-avatar
+          width: 42px
+          padding-bottom: 100%
+          border-radius: 50%
+          background-size: cover
+      .postcard-name
+        flex: 1 1 auto
+        font-size: 18px
+        color: #2b2b2b
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
+
+  .postcard-main
+    position: relative
+    .postcard-text
+      font-size: 16px
+      color: #2b2b2b
+      line-height: 1.5
+      padding: 10px 6px
+    .postcard-img
+      width: 100vw
+      padding-bottom: 100%
+      background-size: contain
